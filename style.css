@@ -25,6 +25,7 @@ body {
     background-color: white;
     border-style: dashed;
     border-color: grey;
+    box-shadow: 0 0 1rem #bdb185;
 }
 
 button {
@@ -33,6 +34,7 @@ button {
     width: 7rem;
     height: 3rem;
     transition: all .07s ease;
+    margin: 2%;
 }
 
 button:hover {
@@ -54,4 +56,12 @@ button.active {
     color: white;
     border-color: #ff7b00;
     box-shadow: 0 0 1rem #ff7b00;
+}
+
+input {
+    width: auto;
+    padding: auto;
+    font-size:xx-large;
+    border: none;
+    border-radius: 4px;
 }
