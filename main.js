@@ -1,5 +1,6 @@
 let color = "black";
 
+//allows click and hover to be used together
 let mouseDown = false
 document.body.onmousedown = () => (mouseDown = true)
 document.body.onmouseup = () => (mouseDown = false)
@@ -77,3 +78,13 @@ function resetGrid(){
 }
 
 createGrid(16);
+
+let slider = document.getElementById("myRange");
+let output = document.getElementById("demo");
+output.innerHTML = `${slider.value} x ${slider.value}`; // Display the default slider value
+
+// Update the current slider value (each time you drag the slider handle)
+slider.oninput = function() {
+  output.innerHTML = `${slider.value} x ${slider.value}`;
+  changeSize(this.value);
+}
